@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WANG BEIYI | 视觉与内容增长作品集</title>
+    <style>
+        :root { --main-pink: #FFB6C1; --soft-blue: #87CEEB; --text-black: #333; }
+        body { background: #fafafa; font-family: 'PingFang SC', 'Helvetica Neue', sans-serif; margin: 0; overflow-x: hidden; }
+        
+        /* 顶部创意区 */
+        .hero { height: 70vh; display: flex; align-items: center; justify-content: center; position: relative; background: white; }
+        .title-group { text-align: left; z-index: 10; padding: 20px; }
+        .title-group h1 { font-size: clamp(3rem, 10vw, 5rem); line-height: 0.8; margin: 0; font-weight: 900; letter-spacing: -2px; }
+        .sub-title { font-size: 1.2rem; color: #666; margin-top: 20px; border-left: 4px solid var(--main-pink); padding-left: 15px; }
+
+        /* 漂浮贴纸 - 体现你的核心技能点 */
+        .sticker {
+            position: absolute; padding: 10px 20px; border: 2px solid var(--text-black);
+            border-radius: 50px; background: white; font-weight: bold; font-size: 0.9rem;
+            box-shadow: 4px 4px 0px var(--text-black); animation: float 4s infinite ease-in-out;
+        }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+
+        /* 作品集板块 */
+        .section-title { padding: 40px 50px 10px; font-size: 2rem; font-weight: 800; color: var(--text-black); }
+        .work-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; padding: 0 50px 50px; }
+        .work-card { background: white; border: 1px solid #eee; overflow: hidden; transition: 0.3s; cursor: pointer; position: relative; }
+        .work-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .work-card img { width: 100%; height: 250px; object-fit: cover; background: #eee; }
+        .work-info { padding: 20px; }
+        .work-info span { font-size: 0.8rem; color: var(--main-pink); font-weight: bold; }
+        .work-info h3 { margin: 10px 0 5px; font-size: 1.2rem; }
+        .work-info p { font-size: 0.9rem; color: #777; margin: 0; }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="sticker" style="top:15%; left:10%; background:#FFD700;">#HBC 媒体运营 [cite: 17, 18]</div>
+        <div class="sticker" style="top:25%; right:15%; background:var(--soft-blue);">#N1 日本语 [cite: 58]</div>
+        <div class="sticker" style="bottom:20%; left:15%;">#IP 架构师 [cite: 26, 31]</div>
+        <div class="sticker" style="bottom:30%; right:20%; background:var(--main-pink);">#爆款制造机 [cite: 53]</div>
+
+        <div class="title-group">
+            <h1>BEIYI<br><span style="color:var(--main-pink)">WANG</span></h1>
+            <div class="sub-title">北海道大学传媒硕士 [cite: 6, 7]<br>寻找视觉与数据增长的平衡点</div>
+        </div>
+    </section>
+
+    <h2 class="section-title">01 增长实验 (Growth)</h2>
+    <div class="work-grid">
+        <div class="work-card">
+            <img src="" alt="HBC项目">
+            <div class="work-info">
+                <span>Social Media & Growth</span>
+                <h3>HBC官方账号“Ayaka酱” [cite: 20]</h3>
+                <p>曝光20K+，实习期间涨粉800+ [cite: 21, 24]</p>
+            </div>
+        </div>
+        <div class="work-card">
+            <img src="" alt="爆款笔记">
+            <div class="work-info">
+                <span>SNS Strategy</span>
+                <h3>小红书追星爆款笔记</h3>
+                <p>累计获赞5.8万+的网感实操 [cite: 53]</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title">02 IP 宇宙 (IP Universe)</h2>
+    <div class="work-grid">
+        <div class="work-card">
+            <img src="" alt="纪念章">
+            <div class="work-info">
+                <span>IP Design</span>
+                <h3>成都自然博物馆纪念章 [cite: 26]</h3>
+                <p>官方录用的10枚系列设计 [cite: 29]</p>
+            </div>
+        </div>
+        <div class="work-card">
+            <img src="" alt="栗子君">
+            <div class="work-info">
+                <span>Character Design</span>
+                <h3>校级 IP “栗子君” [cite: 43]</h3>
+                <p>文创开发与社媒内容运营 [cite: 43]</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
